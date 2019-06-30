@@ -5,11 +5,37 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ChiudiQuellaPortaDai"
         mc:Ignorable="d"
-        Title="CHIUDI" Height="280" Width="200">
-    <StackPanel Orientation="Vertical">
-        <TextBox Name="tbSoundPath" Text="path file audio" Margin="10" />
-        <Image Source="https://d2hhj3gz5jljkm.cloudfront.net/60a/08ac5/a75c/4d9a/9882/8c0d405181e6/original/3441583.jpg"
-               Stretch="UniformToFill"/>
-        <Button Margin="10" Click="Button_Click" Height="40">CHIUDI QUELLA PORTA</Button>
-    </StackPanel>
+        Title="Mosconsole" Height="350" Width="400">
+    <Grid>
+        <TabControl>
+            <TabItem Header="Porta" KeyUp="TabItem_KeyUp">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+                    <Image Grid.Row="0" Source="img/chiudi.png" Stretch="Uniform"/>
+                    <Button Grid.Row="1" FontSize="30" Margin="10" Click="Button_Click">CHIUDI QUELLA PORTA</Button>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Altro" KeyUp="TabItem_KeyUp_1">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+                    <TextBox Name="tbSearch" Grid.Row="0" FontSize="12" KeyUp="TbSearch_KeyUp" />
+                    <ListView Name="lvAudio" Grid.Row="1">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <Button Margin="4" Click="Btn_Audio_Click" ToolTip="{Binding File.FullName}">
+                                    <TextBlock Text="{Binding Name}" />
+                                </Button>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                </Grid>
+            </TabItem>
+        </TabControl>
+    </Grid>
 </Window>

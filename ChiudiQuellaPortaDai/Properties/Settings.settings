@@ -1,7 +1,12 @@
 ﻿<?xml version='1.0' encoding='utf-8'?>
-<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
-  <Profiles>
-    <Profile Name="(Default)" />
-  </Profiles>
-  <Settings />
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="ChiudiQuellaPortaDai.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="AudioFolder" Type="System.String" Scope="User">
+      <Value Profile="(Default)">mosconsoleaudio</Value>
+    </Setting>
+    <Setting Name="ChiudiName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Chiudi quella porta 0</Value>
+    </Setting>
+  </Settings>
 </SettingsFile>
