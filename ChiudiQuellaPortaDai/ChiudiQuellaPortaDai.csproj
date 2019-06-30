@@ -101,13 +101,40 @@
     <Content Include="img\chiudi.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="mosconsoleaudio\aaaaaaah.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="mosconsoleaudio\ah_famo_finta_de_niente.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="mosconsoleaudio\ah_non_lo_so_io.wav">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="mosconsoleaudio\anche_nella_nostra_città_infatti_dioporco.wav">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="mosconsoleaudio\anche_ti_che_te_metti_a_pasa_davanti_dio_podio.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="mosconsoleaudio\andate_in_mona_diocane_se_non_mi_dite_quando_finisce.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="mosconsoleaudio\andiamo_sul_corto_o_da_capo.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="mosconsoleaudio\avete_girato_le_foto_si.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="mosconsoleaudio\a_go_un_casino_che_non_capisso_piu_niente_mi_con_sti_monitor.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="mosconsoleaudio\brescia_foggia_cagliari_roma.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="mosconsoleaudio\cantata_full.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="mosconsoleaudio\chissa_che_non_m_incazza_ae.wav">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="mosconsoleaudio\chiudi_quella_porta_0.wav">
@@ -122,7 +149,13 @@
     <Content Include="mosconsoleaudio\chi_ha_sera_la_porta_diocane.wav">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="mosconsoleaudio\coff_coff_dio_porco.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="mosconsoleaudio\consolidando_pertanto_le_sue_quotazioni_porcodio.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="mosconsoleaudio\coso_pasa_qua_e_nda_gaetano.wav">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="mosconsoleaudio\cos_è_che_è_caduto_dall_altra_parte_dio.wav">
@@ -134,16 +167,46 @@
     <Content Include="mosconsoleaudio\dai_ricominciamo_da_capo_dai.wav">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="mosconsoleaudio\dai_vaffanculo.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="mosconsoleaudio\dalle_partite_dalla_tabella_dai_dios.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="mosconsoleaudio\davanti_a_me_vedo_tutto_meno_quello_che_dovrei_vedere.wav">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="mosconsoleaudio\diocanediocanediocanediocane.wav">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="mosconsoleaudio\diocane_e_non_si_riesce_a_capire_un_cazzo.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="mosconsoleaudio\dioporco_de_dio.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="mosconsoleaudio\dios.wav">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="mosconsoleaudio\dio_boia.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="mosconsoleaudio\dio_cane.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="mosconsoleaudio\dio_cane_1.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="mosconsoleaudio\dio_cane_la_cola_taca_ale_carte_ge_varda.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="mosconsoleaudio\dio_ha_sempre_6_vantaggi_di_lunghezza.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="mosconsoleaudio\dio_papapapapa.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="mosconsoleaudio\dio_porca_madonna_de_dio.wav">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="mosconsoleaudio\dio_porco0.wav">
@@ -152,7 +215,13 @@
     <Content Include="mosconsoleaudio\dio_porco1.wav">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="mosconsoleaudio\dio_porco_che_notizia_come_l_ha_messa_dentro.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="mosconsoleaudio\dio_porco_dio_cane.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="mosconsoleaudio\dio_porco_tutte_le_volte_che_parto.wav">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="mosconsoleaudio\direttore_spotivo_franco_lambri_porcodio.wav">
@@ -161,10 +230,34 @@
     <Content Include="mosconsoleaudio\distratto.wav">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="mosconsoleaudio\era_bella_questa_andando_in_fuori_eh.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="mosconsoleaudio\gaetano.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="mosconsoleaudio\gentili_amici_buonaera.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="mosconsoleaudio\ge_scritto_corti_orcodio.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="mosconsoleaudio\ia_buta_per_aria_tutto_de_la.wav">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="mosconsoleaudio\in_primo_piano_il_calcio_dio_schifoso_can.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="mosconsoleaudio\io_non_riesco_a_capire_piu_niente.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="mosconsoleaudio\la_lista_vaffanculo_di_e_tutti_quanti_come_ti.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="mosconsoleaudio\l_avvocato_marco_bisagno.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="mosconsoleaudio\madonna_puttana.wav">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="mosconsoleaudio\ma_bisogna_essere_degli_stronzi_però_eh.wav">
@@ -188,7 +281,22 @@
     <Content Include="mosconi.ico">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="mosconsoleaudio\ma_é_possibile_puttana_la_madonna.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="mosconsoleaudio\me_son_confuso_la_madonna_poverina_de_dio.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="mosconsoleaudio\mi_vedo_sa.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="mosconsoleaudio\nono_va_in_mona_non_torno_indrio.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="mosconsoleaudio\non_me_venite_dentro_mi_hai_distratto.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="mosconsoleaudio\non_torno_indietro_neanche_a_morire.wav">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="mosconsoleaudio\no_ma_è_sopra_evidentemente.wav">
@@ -197,13 +305,55 @@
     <Content Include="mosconsoleaudio\no_nessuno_gesù_cristo.wav">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="mosconsoleaudio\orcodio.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="mosconsoleaudio\orcodio_in_prima_sessione.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="mosconsoleaudio\orcodio_orcodio_orcodio.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="mosconsoleaudio\orcodio_stavo_pensando_sentendo.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="mosconsoleaudio\porca_madonna.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="mosconsoleaudio\porcodio.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="mosconsoleaudio\porco_dio_l_austra_vaffanculo.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="mosconsoleaudio\quel_cazzo_de_rumore_li.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="mosconsoleaudio\riproviamo_perche_dio_bubu.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="mosconsoleaudio\romano_andrea_de_cesaris.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="mosconsoleaudio\senza_le_maiuscole_senza_i_punti.wav">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="mosconsoleaudio\se_io_trovo_quello_che_mi_ha_fatto_innervosire_lo_trovero.wav">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="mosconsoleaudio\se_non_bestemmio_guarda.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="mosconsoleaudio\se_venite_avanti_ancora_vi_do_un_punio.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="mosconsoleaudio\si_quello_li_non_quello_la.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="mosconsoleaudio\speta_che_me_fermo_un_atimo.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="mosconsoleaudio\speta_un_seconda_vala_diocane.wav">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="mosconsoleaudio\sto_telefono_porco_dio.wav">
@@ -218,7 +368,19 @@
     <Content Include="mosconsoleaudio\uno_continua_dervla_serarla.wav">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="mosconsoleaudio\un_cordiale_buongiorno.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="mosconsoleaudio\vaffanculo.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="mosconsoleaudio\vaffanculo_1.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="mosconsoleaudio\vaffanculo_dio_porco.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="mosconsoleaudio\va_in_mona_cortesia_simpatia.wav">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>

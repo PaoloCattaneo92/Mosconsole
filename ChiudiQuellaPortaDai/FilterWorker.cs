@@ -52,7 +52,7 @@ namespace ChiudiQuellaPortaDai
         {
             if (Source?.Count > 0)
             {
-                e.Result = Source.FindAll(m => m.Name.Replace(" ", "").IndexOf((string)e.Argument, StringComparison.OrdinalIgnoreCase) >= 0);
+                e.Result = Source.FindAll(m => m.Name.Replace(" ", "").IndexOf(((string)e.Argument).Replace(" ", ""), StringComparison.OrdinalIgnoreCase) >= 0);
             }
         }
     }

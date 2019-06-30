@@ -5,9 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ChiudiQuellaPortaDai"
         mc:Ignorable="d"
-        Title="Mosconsole" Height="350" Width="400">
+        KeyDown="Window_KeyDown"
+        Title="Mosconsole" Height="600" Width="500">
     <Grid>
-        <TabControl>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <TabControl SelectionChanged="TabControl_SelectionChanged">
             <TabItem Header="Porta" KeyUp="TabItem_KeyUp">
                 <Grid>
                     <Grid.RowDefinitions>
@@ -24,7 +28,7 @@
                         <RowDefinition Height="Auto" />
                         <RowDefinition Height="*" />
                     </Grid.RowDefinitions>
-                    <TextBox Name="tbSearch" Grid.Row="0" FontSize="12" KeyUp="TbSearch_KeyUp" />
+                    <TextBox Name="tbSearch" Grid.Row="0" FontSize="12" KeyUp="TbSearch_KeyUp"  Margin="10"/>
                     <ListView Name="lvAudio" Grid.Row="1">
                         <ListView.ItemTemplate>
                             <DataTemplate>
@@ -34,6 +38,7 @@
                             </DataTemplate>
                         </ListView.ItemTemplate>
                     </ListView>
+                    <TextBlock Grid.Row="1" FontWeight="Black" x:Name="tbCount" Text="10" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="10,10,25,10"/>
                 </Grid>
             </TabItem>
         </TabControl>
