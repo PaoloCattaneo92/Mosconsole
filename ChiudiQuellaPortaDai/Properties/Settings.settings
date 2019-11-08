@@ -2,7 +2,7 @@
 <SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="ChiudiQuellaPortaDai.Properties" GeneratedClassName="Settings">
   <Profiles />
   <Settings>
-    <Setting Name="AudioFolder" Type="System.String" Scope="User">
+    <Setting Name="MosconiAudioFolder" Type="System.String" Scope="User">
       <Value Profile="(Default)">mosconsoleaudio</Value>
     </Setting>
     <Setting Name="ChiudiName" Type="System.String" Scope="User">

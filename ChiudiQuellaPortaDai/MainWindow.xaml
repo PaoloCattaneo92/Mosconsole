@@ -11,25 +11,31 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
-        <TabControl SelectionChanged="TabControl_SelectionChanged">
-            <TabItem Header="Porta" KeyUp="TabItem_KeyUp">
+        <TabControl Name="tabControl" SelectionChanged="TabControl_SelectionChanged">
+            <TabItem Header="CHIUDI" KeyUp="TabItem_KeyUp">
                 <Grid>
                     <Grid.RowDefinitions>
                         <RowDefinition Height="*" />
                         <RowDefinition Height="*" />
                     </Grid.RowDefinitions>
                     <Image Grid.Row="0" Source="img/chiudi.png" Stretch="Uniform"/>
-                    <Button Grid.Row="1" FontSize="30" Margin="10" Click="Button_Click">CHIUDI QUELLA PORTA</Button>
+                    <Button Name="btnChiudi" Grid.Row="1" FontSize="30" Margin="10" Click="Button_Click" Background="LightGray">CHIUDI QUELLA PORTA</Button>
                 </Grid>
             </TabItem>
-            <TabItem Header="Tutti gli auDIO" KeyUp="TabItem_KeyUp_1">
+            <TabItem Name="tabMosconi" KeyUp="TabItem_KeyUp_Mosconi">
+                <TabItem.Header>
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="img/header_mosconi.jpg" Height="40" Stretch="Uniform"/>
+                        <TextBlock Margin="5,0" Text="Mosconi" VerticalAlignment="Center" />
+                    </StackPanel>
+                </TabItem.Header>
                 <Grid>
                     <Grid.RowDefinitions>
                         <RowDefinition Height="Auto" />
                         <RowDefinition Height="*" />
                     </Grid.RowDefinitions>
-                    <TextBox Name="tbSearch" Grid.Row="0" FontSize="12" KeyUp="TbSearch_KeyUp"  Margin="10"/>
-                    <ListView Name="lvAudio" Grid.Row="1">
+                    <TextBox Name="tbSearchMosconi" Grid.Row="0" FontSize="12" KeyUp="TbSearchMosconi_KeyUp"  Margin="10"/>
+                    <ListView Name="lvMosconi" Grid.Row="1">
                         <ListView.ItemTemplate>
                             <DataTemplate>
                                 <Button Margin="4" Click="Btn_Audio_Click" ToolTip="{Binding File.FullName}">

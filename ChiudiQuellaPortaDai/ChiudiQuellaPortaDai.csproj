@@ -101,6 +101,7 @@
     <Content Include="img\chiudi.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Resource Include="img\header_mosconi.jpg" />
     <Content Include="mosconsoleaudio\aaaaaaah.wav">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>

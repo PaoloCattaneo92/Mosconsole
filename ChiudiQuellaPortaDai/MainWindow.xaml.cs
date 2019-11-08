@@ -22,41 +22,60 @@ namespace ChiudiQuellaPortaDai
     public partial class MainWindow : Window
     {
         private readonly MediaPlayer mediaPlayer = new MediaPlayer() { Volume = 1 };
-        private readonly List<MoscoAudio> audio;
+
+        private Dictionary<string, List<MoscoAudio>> audios;
+        private Dictionary<string, TextBox> tbSearch;
+
+        private readonly List<MoscoAudio> mosconi;
         private readonly MoscoAudio chiudi;
         private readonly Dictionary<Key, int> NUMBER_KEYS = new Dictionary<Key, int>
         {
             { Key.NumPad1, 0 },
+            { Key.D1, 0 },
             { Key.NumPad2, 1 },
+            { Key.D2, 1 },
             { Key.NumPad3, 2 },
+            { Key.D3, 2 },
             { Key.NumPad4, 3 },
+            { Key.D4, 3 },
             { Key.NumPad5, 4 },
+            { Key.D5, 4 },
             { Key.NumPad6, 5 },
+            { Key.D6, 5 },
             { Key.NumPad7, 6 },
+            { Key.D7, 6 },
             { Key.NumPad8, 7 },
+            { Key.D8, 7 },
             { Key.NumPad9, 8 },
-            { Key.NumPad0, 9 }
+            { Key.D9, 8 },
+            { Key.NumPad0, 9 },
+            { Key.D0, 9 }
         };
 
         public MainWindow()
         {
             InitializeComponent();
             Loaded += MainWindow_Loaded;
-            audio = new List<MoscoAudio>();
-            foreach (string file in Directory.EnumerateFiles(Settings.Default.AudioFolder))
+            mosconi = new List<MoscoAudio>();
+            foreach (string file in Directory.EnumerateFiles(Settings.Default.MosconiAudioFolder))
             {
-                audio.Add(new MoscoAudio(file));
+                mosconi.Add(new MoscoAudio(file));
             }
-            chiudi = audio.FirstOrDefault(a => a.Name == Settings.Default.ChiudiName);
-            lvAudio.ItemsSource = audio;
-            tbSearch.Focus();
-            tbCount.Text = $"{audio.Count} audio trovati";
-            tbCount.ToolTip = $"Cercati nella cartella {Settings.Default.AudioFolder}";
+            chiudi = mosconi.FirstOrDefault(a => a.Name == Settings.Default.ChiudiName);
+            if(chiudi == null)
+            {
+                MessageBox.Show("Chiudi quella porta file not found (looking for " + Settings.Default.ChiudiName + ")");
+            }
+            lvMosconi.ItemsSource = mosconi;
+            tbSearchMosconi.Focus();
+            tbCount.Text = $"{mosconi.Count} audio trovati";
+            tbCount.ToolTip = $"Cercati nella cartella {Settings.Default.MosconiAudioFolder}";
         }
 
         private void MainWindow_Loaded(object sender, RoutedEventArgs e)
         {
             ChiudiQuellaPorta();
+            btnChiudi.Focus();
         }
 
         private void ChiudiQuellaPorta()
@@ -79,9 +98,9 @@ namespace ChiudiQuellaPortaDai
             mediaPlayer.Play();
         }
 
-        private void TbSearch_KeyUp(object sender, KeyEventArgs e)
+        private void TbSearchMosconi_KeyUp(object sender, KeyEventArgs e)
         {
-            new FilterWorker(audio, lvAudio, tbSearch).Run();
+            new FilterWorker(mosconi, lvMosconi, tbSearchMosconi).Run();
         }
 
         private void TabItem_KeyUp(object sender, KeyEventArgs e)
@@ -92,13 +111,13 @@ namespace ChiudiQuellaPortaDai
             }
         }
 
-        private void TabItem_KeyUp_1(object sender, KeyEventArgs e)
+        private void TabItem_KeyUp_Mosconi(object sender, KeyEventArgs e)
         {
             if (e.Key == Key.Enter)
             {
-                if(lvAudio.Items.Count > 0)
+                if(lvMosconi.Items.Count > 0)
                 {
-                    var a = (MoscoAudio)lvAudio.Items[0];
+                    var a = (MoscoAudio)lvMosconi.Items[0];
                     mediaPlayer.Open(a.Uri);
                     mediaPlayer.Play();
                 }
@@ -108,24 +127,24 @@ namespace ChiudiQuellaPortaDai
                 try
                 {
                     var i = NUMBER_KEYS[e.Key];
-                    var a = (MoscoAudio)lvAudio.Items[i];
+                    var a = (MoscoAudio)lvMosconi.Items[i];
                     mediaPlayer.Open(a.Uri);
                     mediaPlayer.Play();
                 }
                 catch (KeyNotFoundException)
                 {
-                    if (lvAudio.Items.Count > 0)
+                    if (lvMosconi.Items.Count > 0)
                     {
-                        var a = (MoscoAudio)lvAudio.Items[0];
+                        var a = (MoscoAudio)lvMosconi.Items[0];
                         mediaPlayer.Open(a.Uri);
                         mediaPlayer.Play();
                     }
                 }
                 catch (ArgumentOutOfRangeException)
                 {
-                    if (lvAudio.Items.Count > 0)
+                    if (lvMosconi.Items.Count > 0)
                     {
-                        var a = (MoscoAudio)lvAudio.Items[lvAudio.Items.Count - 1];
+                        var a = (MoscoAudio)lvMosconi.Items[lvMosconi.Items.Count - 1];
                         mediaPlayer.Open(a.Uri);
                         mediaPlayer.Play();
                     }
@@ -137,7 +156,7 @@ namespace ChiudiQuellaPortaDai
         {
             if(((TabControl)sender).SelectedIndex == 1)
             {
-                tbSearch.Focus();
+                tbSearchMosconi.Focus();
             }
         }
 
@@ -145,7 +164,19 @@ namespace ChiudiQuellaPortaDai
         {
             if(Keyboard.IsKeyDown(Key.LeftCtrl) && e.Key == Key.F)
             {
-                tbSearch.Focus();
+                tbSearchMosconi.Focus();
+            }
+            if (Keyboard.IsKeyDown(Key.LeftShift) && e.Key != Key.Back)
+            {
+                switch (e.Key)
+                {
+                    case Key.D1:
+                        tabControl.SelectedIndex = 0;
+                        break;
+                    case Key.D2:
+                        tabControl.SelectedIndex = 1;
+                        break;
+                }
             }
         }
     }
